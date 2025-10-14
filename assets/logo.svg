@@ -1,7 +1,7 @@
 <svg role="img" aria-labelledby="logo" xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px"
-    viewBox="0 0 543.12 500.88"
-    style="enable-background:new 0 0 543.12 500.88;/* background-color: bisque; *//* color: blanchedalmond; */"
+    viewBox="0 0 543.12 550.88"
+    style="enable-background:new 0 0 543.12 550.88;/* background-color: bisque; *//* color: blanchedalmond; */"
     xml:space="preserve">
     <style type="text/css">
         .st0 {
@@ -61,7 +61,7 @@
         }
     </style>
     <rect class="st0" width="543.12" height="500.88"></rect>
-    <g>
+    <!-- <g>
         <path class="st7"
             d="M127.96,341.93h7.02l19.11,51.48h-7.57l-4.29-12.01h-21.92l-4.21,12.01h-7.25L127.96,341.93z M121.95,376.1   h18.64l-9.28-26.21L121.95,376.1z">
         </path>
@@ -114,7 +114,7 @@
         <path class="st7"
             d="M423.93,466.05c-5.01,0-8.92-1.54-11.73-4.63c-2.8-3.09-4.21-7.42-4.21-12.98c0-5.5,1.35-9.91,4.06-13.22   c2.71-3.31,6.36-4.97,10.95-4.97c4.06,0,7.27,1.42,9.62,4.25c2.35,2.84,3.52,6.69,3.52,11.55v2.54H411.3   c0.04,4.74,1.15,8.36,3.32,10.85c2.17,2.5,5.27,3.75,9.31,3.75c1.97,0,3.7-0.14,5.19-0.41c1.49-0.27,3.38-0.87,5.67-1.78v2.86   c-1.95,0.85-3.75,1.42-5.4,1.73S425.92,466.05,423.93,466.05z M423.01,433.04c-3.32,0-5.99,1.09-8,3.29   c-2.01,2.19-3.18,5.35-3.52,9.47h21.33c0-4-0.87-7.12-2.6-9.38C428.48,434.17,426.08,433.04,423.01,433.04z">
         </path>
-    </g>
+    </g> -->
     <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="140.5284" y1="271.9311" x2="381.3499"
         y2="271.9311">
         <stop offset="0" style="stop-color:#FFFFFF"></stop>
@@ -181,4 +181,16 @@
         <rect x="312.89" y="184.56" class="st0" width="7.23" height="15.86"></rect>
         <circle class="st0" cx="270.26" cy="193.42" r="24.63"></circle>
     </g>
+    <text x="170" y="400" fill="#42b039" font-size="105" style="font-family: calibri; font-weight: bold;">
+        S I M
+    </text>
+    <text x="200" y="450" fill="#ffffff" font-size="50" style="font-family: calibri; font-weight: bold;">
+        Service
+    </text>
+    <text x="160" y="495" fill="#ffffff" font-size="50" style="font-family: calibri; font-weight: bold;">
+        Information
+    </text>
+    <text x="190" y="540" fill="#ffffff" font-size="50" style="font-family: calibri; font-weight: bold;">
+        Manager
+    </text>
 </svg>
