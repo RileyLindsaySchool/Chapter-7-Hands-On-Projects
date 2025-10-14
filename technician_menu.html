@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title id="mainTitle">Home - Appliance Warehouse</title>
+        <script src="assets/jquery.js"></script>
+        <!-- Intersection Observer API support for Safari MAC version below 12 -->
+        <script src="assets/intersection_observer_api.js"></script>
+        <link rel="stylesheet" href="assets/styles.css"/>
+    </head>
+
+    <body>
+        <header class="navbar" id="header">
+            <div class="logo">
+                <span class="visually-hidden" id="logo" aria-hidden="true">Appliance Warehouse Logo</span>
+                <object data="assets/logo.svg"></object>
+            </div>
+
+            <nav>
+                <ul id="lists" class="navList" aria-label="Main Menu">
+                    <li class="list-item"><a href="request_service.html">Customer</a></li>
+                    <li class="list-item"><a href="technician_menu.html">Invoicing</a></li>
+                    <li class="list-item"><a href="#" onclick="loadNavHtml('products')">Appliances</a></li>
+                    <li class="list-item active" aria-current="page"><a href="#" onclick="loadNavHtml('employment')">Technicians</a></li>
+                </ul>
+            </nav>
+            <p id="live_region" aria-live="assertive" class="visually-hidden"></p>
+        </header>
+        
+        <main>
+            <div id="mainView" class="mainViewClass">
+                <div id="intro" class>
+                    <div id="appliances">
+                        <section class="warehouse_appliances ">
+                            <div class="container">
+                                <h2 class="section_title js-scroll fade-in-bottom-first scrolled">Welcome, [Technician Name]!</h2>
+
+                                <hr aria-hidden="true">
+
+                                <div class="main_group">
+                                    <a class="product js-scroll slide-left1 scrolled menu-button" href="request_service.html">
+                                        <h3 class="product_title">View Schedule</h3>
+                                        <p class="product_description">
+                                            View your daily service schedule.
+                                        </p>
+                                    </a>
+
+                                    <a class="product js-scroll slide-right1 scrolled menu-button">
+                                        <h3 class="product_title">Request Parts</h3>
+                                        <p class="product_description">
+                                            Request parts for appliance repair or replacement. Parts department will be notified of any out-of-stock part requests so that they may be ordered in a timely fashion.
+                                        </p>
+                                    </a>
+
+                                    <a class="product js-scroll slide-left2 scrolled menu-button">
+                                        <h3 class="product_title">View Calendar</h3>
+                                        <p class="product_description">
+                                            View calendar of future service appointments.
+                                        </p>
+                                    </a>
+
+                                    <a class="product js-scroll slide-right2 scrolled menu-button">
+                                        <h3 class="product_title">Notes</h3>
+                                        <p class="product_description">
+                                            View or edit notes for a service call.
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

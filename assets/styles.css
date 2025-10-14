@@ -687,3 +687,12 @@ footer {
 abbr {
   text-decoration: none;
 }
+
+.menu-button {
+    text-decoration: none;
+}
+
+.menu-button:hover {
+    background-color: #e8e8e8;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
