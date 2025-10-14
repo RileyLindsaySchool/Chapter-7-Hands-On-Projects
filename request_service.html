@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title id="mainTitle">Home - Appliance Warehouse</title>
+        <script src="assets/jquery.js"></script>
+        <!-- Intersection Observer API support for Safari MAC version below 12 -->
+        <script src="assets/intersection_observer_api.js"></script>
         <link rel="stylesheet" href="assets/styles.css"/>
     </head>
 
@@ -21,6 +28,59 @@
             </nav>
             <p id="live_region" aria-live="assertive" class="visually-hidden"></p>
         </header>
-        <p>Here is a new line of code.</p>
+        
+        <main>
+            <div id="mainView" class="mainViewClass">
+                <div id="intro" class>
+                    <section class="intro_layout">
+                        <div class="intro_img js-scroll slide-left scrolled">
+                        <img src="assets/images/page-2_img-5.jpg" alt="Two individuals, one male and one female, looking at the different styles of ovens provided in the store. They have the oven doors open and are looking and pointing to the features included.">
+                        </div>
+                        <div class="intro_text js-scroll slide-right scrolled">
+                            <h1>Schedule a Service Call</h1>
+                            <form>
+                                <div style="float: left;">
+                                    <label for="fname">First Name:</label><br>
+                                    <input type="text" id="fname" name="fname" placeholder="John" required><br><br>
+
+                                    <label for="lname">Last Name:</label><br>
+                                    <input type="text" id="fname" name="lname" placeholder="Doe" required><br><br>
+
+                                    <label for="phone">Phone Number:</label><br>
+                                    <input type="tel" id="phone" name="phone" placeholder="555-555-5555" required><br><br>
+
+                                    <label for="email">Email Address:</label><br>
+                                    <input type="email" id="email" name="email" placeholder="jdoe@example.com" required><br><br>
+
+                                    <label for="state">State:</label><br>
+                                    <select id="state-select" name="state" required>
+                                        <option value="ar" selected>Arkansas</option>
+                                        <option value="ok">Oklahoma</option>
+                                    </select><br><br>
+
+                                    <label for="city">City:</label><br>
+                                    <select id="city-select" name="city" required>
+                                        <option value="atkns">Atkins</option>
+                                        <option value="clarks">Clarksville</option>
+                                        <option value="fort">Fort Smith</option>
+                                        <option value="russ" selected>Russellville</option>
+                                    </select><br><br>
+
+                                    <label for="street">Street Address:</label><br>
+                                    <input type="text" id="street" name="street" placeholder="123 Cherry Street" required>
+                                </div>
+
+                                <div style="float: right;">
+                                    <label for="desc">Description:</label><br>
+                                    <textarea id="desc" name="desc" rows="26" cols="30" placeholder="Please describe your problem here." required></textarea><br><br>
+
+                                    <input type="submit" style="width: 100%;">
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
     </body>
 </html>
