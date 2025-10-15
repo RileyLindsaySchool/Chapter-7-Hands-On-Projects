@@ -16,7 +16,7 @@ class Part:
         self.val_spacer = " "
         self.padchar = "\t"
         self.indent = "\t"
-        self.cols_per_line = 3
+        self.cols_per_line = 2
 
     def get_field(self, name: str, value: str):
         if len(value) > self.col_w:
@@ -65,4 +65,22 @@ class Part:
         # output += self.indent + "QUANTITY REQUESTED".center(self.col_w, self.spacer) + self.padchar
         return output
 
-print(Part("WDX50934", 374, 29, 29, "Whirlpool", 1760491976 + randint(0, 604800), 16))
+parts = [
+    Part("WDX50934", 374, 29, 29, "Whirlpool", 1760491976 + randint(0, 604800), 16),
+    Part("PRT-109D", 5, 7, 14, "LG", 1760491976 + randint(0, 604800), 30),
+    Part("BQ-5543", 1, 2, 85, "Bosch", 1760491976 + randint(0, 604800), 5),
+    Part("BQ-5543", 30, 5, 18, "KitchenAid", 1760491976 + randint(0, 604800), 10),
+    Part("SGX04QAB", 50, 10, 5, "Samsung", 1760491976 + randint(0, 604800), 100),
+]
+
+report_type = "exception"
+
+if report_type == "detail":
+    print("--- DETAIL REPORT ---")
+    for part in parts:
+            print(part)
+elif report_type == "exception":
+    print("--- PARTS THAT ARE OUT OF STOCK OR HAVE LOWER STOCK THAN REQUESTED BY TECHNICIANS ---")
+    for part in parts:
+        if part.q_in_stock <= part.q_req:
+            print(part)
