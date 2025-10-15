@@ -696,3 +696,40 @@ abbr {
     background-color: #e8e8e8;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
+
+.work-schedule {
+    border-collapse: collapse;
+}
+
+.work-schedule tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+.work-schedule tr:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+/* .work-schedule tr.current {
+    background-color: #e1f5fe;
+    font-weight: bold;
+} */
+
+.work-schedule tr:hover {
+    background-color: #d0d0d0;
+}
+
+.work-schedule th {
+    /* background-color: #2e358d; */
+    /* background-color: #42b039; */
+    background-color: #545DC8;
+    color: #ffffff;
+}
+
+.work-schedule td {
+    padding: 0.5em;
+    border-right: 1px solid #c0c0c0;
+}
+
+.work-schedule td:last-child {
+    border-right: none;
+}

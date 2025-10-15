@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title id="mainTitle">Home - Appliance Warehouse</title>
+        <script src="assets/jquery.js"></script>
+        <!-- Intersection Observer API support for Safari MAC version below 12 -->
+        <script src="assets/intersection_observer_api.js"></script>
+        <link rel="stylesheet" href="assets/styles.css"/>
+    </head>
+
+    <body>
+        <header class="navbar" id="header">
+            <div class="logo">
+                <span class="visually-hidden" id="logo" aria-hidden="true">Appliance Warehouse Logo</span>
+                <object data="assets/logo.svg"></object>
+            </div>
+
+            <nav>
+                <ul id="lists" class="navList" aria-label="Main Menu">
+                    <li class="list-item"><a href="request_service.html">Customer</a></li>
+                    <li class="list-item"><a href="technician_menu.html">Invoicing</a></li>
+                    <li class="list-item"><a href="#" onclick="loadNavHtml('products')">Appliances</a></li>
+                    <li class="list-item active" aria-current="page"><a href="technician_menu.html">Technicians</a></li>
+                </ul>
+            </nav>
+            <p id="live_region" aria-live="assertive" class="visually-hidden"></p>
+        </header>
+        
+        <main>
+            <div id="mainView" class="mainViewClass">
+                <div id="intro" class>
+                    
+                    <div id="appliances">
+                        <section class="intro_layout">
+                            <div class="container">
+                                <h2 class="section_title js-scroll fade-in-bottom-first scrolled">Welcome, [Technician Name]!</h2>
+
+                                <hr aria-hidden="true">
+
+                                <!--<div class="main_group">-->
+                                    <table class="work-schedule">
+                                        <thead>
+                                            <tr>
+                                                <th>Time</th>
+                                                <th>Location</th>
+                                                <th>Customer</th>
+                                                <th>Contact Phone</th>
+                                                <th>Task</th>
+                                                <th>Notes</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1:00PM - 2:00PM</td>
+                                                <td>984 Oak Lane</td>
+                                                <td>Gordon, Hope</td>
+                                                <td>555-375-2398</td>
+                                                <td>Examine broken oven</td>
+                                                <td>Could be bad fuse - check stock</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2:30PM - 3:30PM</td>
+                                                <td>123 Cherry Street</td>
+                                                <td>Doe, John</td>
+                                                <td>555-456-7890</td>
+                                                <td>Replace dishwasher latch</td>
+                                                <td>Part WX-4800D9013 ready for pickup by 1:30PM</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3:45PM - 5:00PM</td>
+                                                <td>456 Cherry Street</td>
+                                                <td>Charleston, David</td>
+                                                <td>555-901-4545</td>
+                                                <td>Estimate refrigerator repair cost</td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                <!--</div>-->
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
